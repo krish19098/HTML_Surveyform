@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3s4Wz6iJgD/+ub2oU" crossorigin="anonymous">
+    <!-- Add custom CSS -->
+    <style>
+        /* Custom styles */
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .form-header h2 {
+            margin: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .form-select {
+            appearance: menulist;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 1.5;
+            height: 150px;
+        }
+
+        .form-submit {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid form-container">
+        <div class="form-header">
+            <h2>Feedback</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="name" class="form-label">Name*</label>
+                <input type="text" class="form-input" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email*</label>
+                <input type="email" class="form-input" id="email">
+            </div>
+            <div class="form-group">
+                <label for="experience" class="form-label">Your Experience *</label>
+                <textarea class="form-textarea" id="experience"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="overallRating" class="form-label">Overall, how would you rate
+                    you experience with us?</label>
+                <select class="form-select" id="overallRating">
+                    <option value="1" selected>Very Unsatisfied</option>
+                    <option value="2">Unsatisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Satisfied</option>
+                    <option value="5">Very Satisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="purchaseRating" class="form-label">How satisfied are you with
+                    Purchase?</label>
+                <select class="form-select" id="purchaseRating">
+                    <option value="1" selected>Very Unsatisfied</option>
+                    <option value="2">Unsatisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Satisfied</option>
+                    <option value="5">Very Satisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="serviceRating" class="form-label">How satisfied are you with
+                    Service?</label>
+                <select class="form-select" id="serviceRating">
+                    <option value="1" selected>Very Unsatisfied</option>
+                    <option value="2">Unsatisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Satisfied</option>
+                    <option value="5">Very Satisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="companyRating" class="form-label">How satisfied are you with
+                    Company Overall?</label>
+                <select class="form-select" id="companyRating">
+                    <option value="1" selected>Very Unsatisfied</option>
+                    <option value="2">Unsatisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Satisfied</option>
+                    <option value="5">Very Satisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="likelihood" class="form-label">Last</label>
+                <select class="form-select" id="likelihood">
+                    <option value="1" selected>Very Unlikely</option>
+                    <option value="2">Unlikely</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Likely</option>
+                    <option value="5">Very Likely</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additionalComments" class="form-label">Additional comments or
+                    suggestions</label>
+                <textarea class="form-textarea" id="additionalComments"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybB5IXNxFwWQfE7u8Lj+XJHAxKlXiG/8rsrtpb6PEdzD828Ii"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
